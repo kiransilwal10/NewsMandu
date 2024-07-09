@@ -1,0 +1,58 @@
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+      {
+        "source": {
+          "id": "cbs-news",
+          "name": "CBS News"
+        },
+        "author": null,
+        "title": "India wins cricket Twenty20 World Cup in exciting final against South Africa",
+        "description": "India won its second T20 World Cup but its first world title in 12 years.",
+        "url": "https://www.cbsnews.com/news/india-wins-cricket-twenty20-world-cup/",
+        "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2024/06/29/8af68a0a-65d6-42aa-8e61-4bdb40900096/thumbnail/1200x630/730ee2e36eee5ad2b0c7c76dd307a9c7/gettyimages-2159226462.jpg?v=a23cb4bdf4fa7f3cb72e5118085577f9",
+        "publishedAt": "2024-06-29T18:57:19+00:00",
+        "content": "India pulled off a sensational seven-run win against South Africa in a gripping final of the Twenty20 World Cup on Saturday.\r\nSouth Africa, playing its first ever final of an ICC tournament, needed a… [+1191 chars]"
+      },
+      {
+        "source": {
+          "id": "cnn",
+          "name": "CNN"
+        },
+        "author": "Issy Ronald",
+        "title": "India wins men’s T20 World Cup, defeating South Africa in dramatic final",
+        "description": "India produced a brilliant performance to defeat South Africa in a dramatic men’s T20 World Cup final, ending a long 13-year wait for the cricket-obsessed nation since its last World Cup win.",
+        "url": "https://www.cnn.com/2024/06/29/sport/india-south-africa-t20-mens-world-cup-final-spt-intl/index.html",
+        "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-2159826610.jpg?c=16x9&q=w_800,c_fill",
+        "publishedAt": "2024-06-29T18:04:09Z",
+        "content": "India produced a brilliant performance to defeat South Africa in a dramatic mens T20 World Cup final, ending a long 13-year wait for the cricket-obsessed nation since its last World Cup win.\r\nThis is… [+39 chars]"
+      },
+      {
+        "source": {
+          "id": "espn-cric-info",
+          "name": "ESPN Cric Info"
+        },
+        "author": null,
+        "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+        "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+        "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+        "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+        "publishedAt": "2020-04-27T11:41:47Z",
+        "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+      },
+      {
+        "source": {
+          "id": "espn-cric-info",
+          "name": "ESPN Cric Info"
+        },
+        "author": null,
+        "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+        "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+        "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+        "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+        "publishedAt": "2020-03-30T15:26:05Z",
+        "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+      }
+    ]
+  }
