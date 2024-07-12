@@ -16,13 +16,18 @@ export class News extends Component {
     pageSize: PropTypes.number,
     category: PropTypes.string
   }
-  constructor() {
-    super();
+
+   capitalizeFirstLetter = (word) => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  };
+  constructor(props) {
+    super(props);
     this.state = {
       articles: [],
       loading: false,
       page: 1 
     }
+    document.title = `${this.capitalizeFirstLetter(this.props.category)} - NewsMandu`;
   }
 
   async fetchNews(page) {
@@ -59,7 +64,7 @@ export class News extends Component {
       <div className='container my-3'>
         <br/>
         {this.state.loading && <p>Loading...</p>}
-        <h1 className='text-center'>NewsMandu - Top Headlines</h1> <br/>
+        <h1 className='text-center'>NewsMandu - {this.capitalizeFirstLetter(this.props.category)}</h1> <br/>
         {this.state.loading && <Spinner/>}
         
         {!this.state.loading && this.state.articles.length === 0 && (
@@ -77,6 +82,8 @@ export class News extends Component {
                   description={element.description ? element.description : ""} 
                   imageUrl={element.urlToImage} 
                   newsUrl={element.url} 
+                  author={element.author}
+                  date={element.publishedAt}
                 />
               </div>
             );
