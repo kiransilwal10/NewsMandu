@@ -31,16 +31,24 @@ export class News extends Component {
   }
 
   async fetchNews(page) {
+    this.props.setProgress(10)
     this.setState({ loading: true });
     try {
-      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=910a06fa2dda487fbf81ef6e567e275e&page=${page}&pageSize=${this.props.pageSize}`;
+      this.props.setProgress(30);
+      let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${this.props.apiKey}&page=${page}&pageSize=${this.props.pageSize}`;
+
+
       let data = await fetch(url);
+
+      
       let parsedData = await data.json();
       this.setState({
         articles: parsedData.articles,
         loading: false,
         page: page
-      });
+
+      })
+      this.props.setProgress(100);;
     } catch (error) {
       console.error("Error fetching news:", error);
       this.setState({ loading: false });
@@ -64,7 +72,7 @@ export class News extends Component {
       <div className='container my-3'>
         <br/>
         {this.state.loading && <p>Loading...</p>}
-        <h1 className='text-center'>NewsMandu - {this.capitalizeFirstLetter(this.props.category)}</h1> <br/>
+        <h1 className='text-center' style={{margin: '35px 0px', marginTop:'60px'}}>NewsMandu - {this.capitalizeFirstLetter(this.props.category)}</h1> <br/>
         {this.state.loading && <Spinner/>}
         
         {!this.state.loading && this.state.articles.length === 0 && (
